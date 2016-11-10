@@ -11,6 +11,8 @@ This installs the following modules:
 
 ## Usage
 
+Note: do not set a virtualenv, the installer will do it for you.
+
 Clone and cd into the directory then:
 
   ```bash

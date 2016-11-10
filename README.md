@@ -1,8 +1,8 @@
 # Django instant installer
 
-Installer and demo for Django Instant.
+Installer and demo for [Django Instant](https://github.com/synw/django-instant).
 
-This will install Django and the following modules:
+This will install Django and:
 
 - [Centrifugo](https://github.com/centrifugal/centrifugo): the websockets server.
 - [Django Instant](https://github.com/synw/django-instant): the Centrifugo <-> Django layer

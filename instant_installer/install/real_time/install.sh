@@ -21,7 +21,7 @@ echo "Settings updated"
 python $urlscript $project_name $base_dir $urls instant
 echo "Urls updated"
 
-read -n 1 -p "Install the Centrifugo web sockets server (Y/n)? " answer
+read -n 1 -p "Install the Centrifugo websockets server (Y/n)? " answer
 [ -z "$answer" ] && answer="default"
 if 	[ $answer == 'default' ]
     then
@@ -43,6 +43,7 @@ fi
 sleep 1
 echo "Generating config for django-presence ..."
 python $project_dir/manage.py installpres
+sleep 1
 
 ok $green "Real time package installed"
 echo "Some documentation is available:

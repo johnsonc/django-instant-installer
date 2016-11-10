@@ -41,5 +41,4 @@ cd centrifugo
 cd ../my_project_dir/
 ./centpres &
 python manage.py runserver
-python
   ```

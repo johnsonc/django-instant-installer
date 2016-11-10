@@ -32,9 +32,9 @@ To get a full demo just say yes to everything and open your browser.
 ## Run the servers
 
 Note: the installer has an option to start the servers at the end of the process. When you Ctrl+c to stop you have to
-shutdown centpres manualy: `killall centpres`
+shutdown the presence worker manualy: `killall centpres`
 
-To run the servers manualy cd to the dir where you installed and:
+To run the servers manualy cd to the directory where you installed and:
 
   ```bash
 cd centrifugo

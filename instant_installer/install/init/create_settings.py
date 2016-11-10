@@ -190,6 +190,7 @@ MQUEUE_AUTOREGISTER = (
 #~ logging to db
 from mqueue.conf import DEV_LOGGING as LOGGING
 
+ALAPAGE_EDIT_MODE = "code"
 """
 
 # generate settings

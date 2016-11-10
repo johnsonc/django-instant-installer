@@ -1,0 +1,63 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Realtime demo</title>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" media="screen, projection" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css" />
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" media="screen, projection" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" media="screen, projection" href="{% static 'screen.css' %}" />
+</head>
+
+<body>
+	<div id="header" class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div id="site_title">
+					<i id="site_icon" class="fa fa-flash"></i><a href="/">Django Instant</a>
+				</div>
+				<div id="instant_widget" class="visible-md visible-lg">
+					{% include "instant/messages.html" %}
+				</div>
+				<div id="presence_widget" class="visible-md visible-lg">
+					{% include "presence/widget.html" %}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div clas="col-xs-12">
+	  			<div id="navbar">
+	  			<ul class="list-inline gi">
+					{% if user.is_staff %}
+					<li>
+						<a class="btn btn-link{% if request.path|slice:'6' == '/admin' %} active{% endif %}" href="/admin/">Admin</a>
+					</li>
+					{% endif %}
+					<li>
+						<a class="btn btn-link{% if request.path|slice:'7' == '/events' %} active{% endif %}" href="/events/">Events</a>
+					</li>
+					<li>
+						<a class="btn btn-link{% if request.path|slice:'8' == '/instant' %} active{% endif %}" href="/instant/">Broadcast</a>
+					</li>
+				</ul>
+	  			</div>
+	  		</div>
+		</div>
+	</div>
+	<div id="messages">
+		{% block messages %}
+			{% include 'messages_display.html' %}
+		{% endblock %}
+	</div>
+	<div id="content" class="container">
+		{% block content %}{% endblock %}
+	</div>
+	<div id="footer" class="container-fluid">
+		{% include "footer.html" %}
+ 	</div>
+{% include "instant/client.html" %}
+</body>
+</html>

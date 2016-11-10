@@ -1,0 +1,57 @@
+a, a:hover {
+	text-decoration:none;
+}
+#header { 
+	background-color:steelblue;
+	min-height:5em;
+	}	
+#header a, #header a:visited {
+	color:white;
+}
+#site_title {
+	font-size:280%;
+	margin:0;
+	padding:0;
+	position:absolute;
+	top:0.1em;
+	left:1.5em;
+	letter-spacing:0.1em;
+}
+#site_icon {
+	color:gold;
+	padding-right:0.3em;
+	padding-top:0.2em;
+}
+#instant_widget {
+	position:absolute;
+	top:1.6em;
+	right:1.5em;
+}
+#presence_widget {
+	position:absolute;
+	top:1.8em;
+	left:28em;
+	color:white;
+}
+#messages {
+	width:100%;
+}
+#navbar .list-inline a:hover, #navbar .list-inline a.active {
+	color:darkslategrey !important;
+	background-color:white;
+	text-decoration:none;
+}
+#navbar .list-inline a {
+	color:white;
+}
+#navbar {
+	background-color:grey;
+	padding:0 0 0 6em;
+	min-height:2.9em;
+}
+#navbar .btn {
+	height:2.9em !important;
+	min-height:2.9em !important;
+	padding-top:0.6em;
+	vertical-align:baseline;
+}

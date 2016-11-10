@@ -21,10 +21,10 @@ python instant_installer
 
 ## Demo
 
-To run the demo:
+To install the demo:
 
   ```bash
 python instant_installer -d
   ```
 
-To get a full demo: say yes to everything and open your browser.
+To get a full demo just say yes to everything and open your browser.

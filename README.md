@@ -9,7 +9,7 @@ This installs the following modules:
 - [Django Mqueue Livefeed](https://github.com/synw/django-mqueue-livefeed): realtime application events and logs
 - [Django Presence](https://github.com/synw/django-presence): user presence notification widget
 
-## Usage
+## Install
 
 Note: do not set a virtualenv, the installer will do it for you.
 

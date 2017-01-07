@@ -27,7 +27,7 @@ if 	[ $answer == 'default' ]
     then
 		cd $base_dir
 		echo "Getting the server ..."
-		wget https://github.com/centrifugal/centrifugo/releases/download/v1.5.1/centrifugo-1.5.1-linux-386.zip
+		wget https://github.com/centrifugal/centrifugo/releases/download/v1.6.1/centrifugo-1.6.1-linux-386.zip
 		echo "Installing the server ..."
 		unzip centrifugo-1.5.1-linux-386.zip
 		rm -f centrifugo-1.5.1-linux-386.zip
